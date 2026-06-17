@@ -12,6 +12,8 @@ spec:
   system: creditos
   providesApis:
     - loans-api-spec        # ← referencia al Kind: API de abajo
+  consumesApis:
+    - accounts-api-spec
 ---
 apiVersion: backstage.io/v1alpha1
 kind: API

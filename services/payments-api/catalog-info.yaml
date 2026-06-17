@@ -12,6 +12,10 @@ spec:
   system: banca-digital
   providesApis:
     - payments-api-spec        # ← referencia al Kind: API de abajo
+  consumesApis:
+    - accounts-api-spec
+  dependsOn:
+    - components:notifications-service
 ---
 apiVersion: backstage.io/v1alpha1
 kind: API
