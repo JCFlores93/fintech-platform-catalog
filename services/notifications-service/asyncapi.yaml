@@ -1,0 +1,36 @@
+asyncapi: '2.6.0'
+info:
+  title: Notifications Service
+  version: '1.0.0'
+  description: Servicio de eventos de dominio — FinTech Peru
+
+channels:
+  payment.completed:
+    publish:
+      summary: Pago procesado exitosamente
+      message:
+        payload:
+          type: object
+          properties:
+            eventId:
+              type: string
+            timestamp:
+              type: string
+              format: date-time
+            payload:
+              type: object
+
+  loan.approved:
+    publish:
+      summary: Préstamo aprobado
+      message:
+        payload:
+          type: object
+          properties:
+            eventId:
+              type: string
+            timestamp:
+              type: string
+              format: date-time
+            payload:
+              type: object

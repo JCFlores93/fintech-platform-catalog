@@ -1,0 +1,67 @@
+openapi: 3.0.3
+info:
+  title: Accounts API
+  version: 1.0.0
+
+paths:
+
+  /accounts/{id}:
+    get:
+      summary: Obtener datos de una cuenta
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Datos de una cuenta
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Account'
+
+  /accounts/{id}/balance:
+    get:
+      summary: Consultar saldo
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Consultar saldo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Account'
+
+  /accounts:
+    post:
+      summary: Crear una nueva cuenta
+      responses:
+        '201':
+          description: Creación de cuenta iniciada
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Account'
+
+components:
+  schemas:
+    Account:
+      type: object
+      properties:
+        id:
+          type: string
+        ownerId:
+          type: number
+        type:
+          type: string
+        balance:
+          type: string
+        currency:
+          type: string

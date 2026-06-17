@@ -1,0 +1,25 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: notifications-service
+  description: "Servicio de eventos de dominio"
+spec:
+  type: service
+  lifecycle: production
+  owner: platform-team
+  system: notificaciones
+  providesApis:
+    - notifications-service-spec
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: notifications-service-spec
+  description: "Contrato AsyncAPI del servicio de notificaciones"
+spec:
+  type: asyncapi
+  lifecycle: production
+  owner: platform-team
+  system: notificaciones
+  definition:
+    $text: ./asyncapi.yaml

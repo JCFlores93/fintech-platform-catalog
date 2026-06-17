@@ -10,3 +10,7 @@ spec:
     - https://github.com/JCFlores93/fintech-platform-catalog/blob/main/systems/banca-digital.yaml
     - https://github.com/JCFlores93/fintech-platform-catalog/blob/main/systems/creditos.yaml
     - https://github.com/JCFlores93/fintech-platform-catalog/blob/main/systems/notificaciones.yaml
+    - https://github.com/JCFlores93/fintech-platform-catalog/blob/main/services/payments-api/catalog-info.yaml
+    - https://github.com/JCFlores93/fintech-platform-catalog/blob/main/services/accounts-api/catalog-info.yaml
+    - https://github.com/JCFlores93/fintech-platform-catalog/blob/main/services/loans-api/catalog-info.yaml
+    - https://github.com/JCFlores93/fintech-platform-catalog/blob/main/services/notifications-service/catalog-info.yaml

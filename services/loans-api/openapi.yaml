@@ -1,0 +1,68 @@
+openapi: 3.0.3
+info:
+  title: Loans API
+  version: 1.0.0
+
+paths:
+  /loans/apply:
+    post:
+      summary: Solicitar un préstamo
+      responses:
+        '201':
+          description: Préstamo solicitado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Loan'
+
+  /loans/{id}:
+    get:
+      summary: Consultar estado del préstamo
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Estado del préstamo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Loan'
+
+  /loans/{id}/schedule:
+    get:
+      summary: Ver cronograma de pagos
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Cronograma de pagos
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Loan'
+
+components:
+  schemas:
+    Loan:
+      type: object
+      properties:
+        id:
+          type: string
+        applicantId:
+          type: string
+        amount:
+          type: number
+        term:
+          type: integer
+        interestRate:
+          type: number
+        status:
+          type: string

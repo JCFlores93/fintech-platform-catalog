@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: loans-api
+  description: "Servicio de préstamos"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  lifecycle: production
+  owner: creditos-team
+  system: creditos
+  providesApis:
+    - loans-api-spec        # ← referencia al Kind: API de abajo
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: loans-api-spec
+  description: "Contrato OpenAPI del servicio de préstamos"
+spec:
+  type: openapi
+  lifecycle: production
+  owner: creditos-team
+  system: creditos
+  definition:
+    $text: ./openapi.yaml      # ← apunta al archivo del contrato
