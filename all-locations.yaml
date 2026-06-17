@@ -5,5 +5,5 @@ metadata:
   description: Catálogo de FinTech Peru S.A.
 spec:
   targets:
-    - ./org/groups.yaml
-    - ./org/users.yaml
+    - https://github.com/JCFlores93/fintech-platform-catalog/blob/main/org/groups.yaml
+    - https://github.com/JCFlores93/fintech-platform-catalog/blob/main/org/users.yaml

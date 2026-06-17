@@ -5,7 +5,9 @@ metadata:
   description: "Equipo responsable de la plataforma — FinTech Peru"
 spec:
   type: team
-
+  profile:
+    displayName: Platform Team
+  children: []
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
@@ -14,7 +16,9 @@ metadata:
   description: "Equipo responsable de pagos y cuentas — FinTech Peru"
 spec:
   type: team
-
+  profile:
+    displayName: Banca Digital Team
+  children: []
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
@@ -23,3 +27,6 @@ metadata:
   description: "Equipo responsable de créditos — FinTech Peru"
 spec:
   type: team
+  profile:
+    displayName: Créditos Team
+  children: []
