@@ -1,0 +1,25 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: platform-team
+  description: "Equipo responsable de la plataforma — FinTech Peru"
+spec:
+  type: team
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: banca-digital-team
+  description: "Equipo responsable de pagos y cuentas — FinTech Peru"
+spec:
+  type: team
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: creditos-team
+  description: "Equipo responsable de créditos — FinTech Peru"
+spec:
+  type: team
