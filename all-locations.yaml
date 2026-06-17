@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: fintech-platform-catalog
+  description: Catálogo de FinTech Peru S.A.
+spec:
+  targets:
+    - ./org/groups.yaml
+    - ./org/users.yaml
