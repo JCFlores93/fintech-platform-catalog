@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: creditos
+  description: "Sistema de banca digital — creditos"
+spec:
+  owner: creditos-team

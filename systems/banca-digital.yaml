@@ -1,0 +1,7 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: banca-digital
+  description: "Sistema de banca digital — pagos y cuentas"
+spec:
+  owner: banca-digital-team

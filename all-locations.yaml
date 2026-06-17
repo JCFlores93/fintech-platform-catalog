@@ -7,3 +7,6 @@ spec:
   targets:
     - https://github.com/JCFlores93/fintech-platform-catalog/blob/main/org/groups.yaml
     - https://github.com/JCFlores93/fintech-platform-catalog/blob/main/org/users.yaml
+    - https://github.com/JCFlores93/fintech-platform-catalog/blob/main/systems/banca-digital.yaml
+    - https://github.com/JCFlores93/fintech-platform-catalog/blob/main/systems/creditos.yaml
+    - https://github.com/JCFlores93/fintech-platform-catalog/blob/main/systems/notificaciones.yaml
